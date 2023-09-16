@@ -1,0 +1,21 @@
+Guray - Digital
+https://www.tinkercad.com/things/dBiYyWWHtpz-stunning-vihelmo-hillar/editel?sharecode=Hx92llPJ7lX_O5ij0SrJX94lIBExn7_ZfqAmZTwQ1no&fbclid=IwAR2Ls_i-34X_MGSnhDy8aA8gULrk8wMtwglZ7x16RGLvBLuhOdM4FVrbgng&sharecode=Hx92llPJ7lX_O5ij0SrJX94lIBExn7_ZfqAmZTwQ1no
+
+int PIN = 8; 
+
+
+void setup() {
+  pinMode(PIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+
+void loop() {
+  digitalWrite(PIN, HIGH);
+  delay(500);
+  Serial.println("ON");
+  
+  digitalWrite(PIN, LOW);
+  delay(500); 
+  Serial.println("OFF");
+}

@@ -1,0 +1,21 @@
+Guray - Analog
+https://www.tinkercad.com/things/g74i5Ibg5jY-funky-migelo/editel?sharecode=4DzDpMmk1VFfqzpvEvlGr3MtyplvHgOGAldikqdOSXw
+
+int ledPin = 7;     
+int potentiometerPin = 3;  
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  int potentiometerValue = analogRead(potentiometerPin);
+
+ Serial.println(potentiometerValue);
+  if (potentiometerValue > 200) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+}
